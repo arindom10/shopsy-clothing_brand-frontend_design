@@ -4,26 +4,26 @@ import Slider from "react-slick";
 const TestimonialData = [
   {
     id: 1,
-    name: "Victor",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    name: "Global Threads Co.",
+    text: "Outstanding service and high-quality apparel! Their product range is diverse, and delivery is always on time. Highly recommended for bulk orders!",
     img: "https://picsum.photos/101/101",
   },
   {
     id: 2,
-    name: "Satya Nadella",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    name: "TrendWear Solutions",
+    text: "Excellent craftsmanship and attention to detail. Their garments are fashionable, durable, and perfectly tailored to meet our requirements.",
     img: "https://picsum.photos/102/102",
   },
   {
     id: 3,
-    name: "Virat Kohli",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    name: "Fashion Vista Ltd",
+    text: "A reliable partner with an impressive selection of stylish apparel. Their customer service and consistent quality make them a top choice.",
     img: "https://picsum.photos/104/104",
   },
   {
     id: 5,
-    name: "Sachin Tendulkar",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    name: "Elite Apparel Resellers",
+    text: "Great experience working with them! They provide premium garments at competitive prices and ensure seamless transactions every time.",
     img: "https://picsum.photos/103/103",
   },
 ];
@@ -78,10 +78,6 @@ const Testimonials = () => {
           <h1 data-aos="fade-up" className="text-3xl font-bold">
             Testimonials
           </h1>
-          <p data-aos="fade-up" className="text-xs text-gray-400">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-            asperiores modi Sit asperiores modi
-          </p>
         </div>
 
         {/* Testimonial cards */}

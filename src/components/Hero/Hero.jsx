@@ -1,5 +1,5 @@
 import React from "react";
-import Image1 from "../../assets/hero/women.png";
+import Image1 from "../../assets/hero/women.jpg";
 import Image2 from "../../assets/hero/shopping.png";
 import Image3 from "../../assets/hero/sale.png";
 import Slider from "react-slick";
@@ -8,24 +8,24 @@ const ImageList = [
   {
     id: 1,
     img: Image1,
-    title: "Upto 50% off on all Men's Wear",
+    title: "Apparel Manufacturerin Thailand",
     description:
-      "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Discover top-quality apparel manufacturing in Thailand with expert craftsmanship and sustainable practices. From design to production, we specialize in creating premium garments tailored to your brand’s needs. Trusted by global clients for exceptional quality and timely delivery, we bring your vision to life with precision and care. Partner with us for seamless apparel solutions.",
   },
-  {
-    id: 2,
-    img: Image2,
-    title: "30% off on all Women's Wear",
-    description:
-      "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    id: 3,
-    img: Image3,
-    title: "70% off on all Products Sale",
-    description:
-      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
+  // {
+  //   id: 2,
+  //   img: Image2,
+  //   title: "30% off on all Women's Wear",
+  //   description:
+  //     "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  // },
+  // {
+  //   id: 3,
+  //   img: Image3,
+  //   title: "70% off on all Products Sale",
+  //   description:
+  //     "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  // },
 ];
 
 const Hero = ({ handleOrderPopup }) => {
@@ -50,7 +50,7 @@ const Hero = ({ handleOrderPopup }) => {
       <div className="container pb-8 sm:pb-0">
         <Slider {...settings}>
           {ImageList.map((data) => (
-            <div>
+            <div key={data.id}>
               <div className="grid grid-cols-1 sm:grid-cols-2">
                 {/* text content section */}
                 <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10">
@@ -74,14 +74,7 @@ const Hero = ({ handleOrderPopup }) => {
                     data-aos="fade-up"
                     data-aos-duration="500"
                     data-aos-delay="300"
-                  >
-                    <button
-                      onClick={handleOrderPopup}
-                      className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
-                    >
-                      Order Now
-                    </button>
-                  </div>
+                  ></div>
                 </div>
                 {/* image section */}
                 <div className="order-1 sm:order-2">
@@ -93,7 +86,7 @@ const Hero = ({ handleOrderPopup }) => {
                     <img
                       src={data.img}
                       alt=""
-                      className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto"
+                      className="w-[400px] h-[400px] sm:h-[450px] sm:w-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto"
                     />
                   </div>
                 </div>
