@@ -84,6 +84,12 @@ const AboutUs = () => {
               BrianKStevens@dayrep.com
             </a>
           </p>
+          <p>
+            📧 <span className="font-semibold text-gray-800">Email:</span>{" "}
+            <a href="mailto:BrianKStevens@dayrep.com" className="text-blue-600">
+              briank@howlatex.com
+            </a>
+          </p>
         </div>
       </div>
     </section>

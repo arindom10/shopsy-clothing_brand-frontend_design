@@ -87,6 +87,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p>Email: BrianKStevens@dayrep.com</p>
+                  <p>Email: briank@howlatex.com</p>
                 </div>
                 <div className="flex items-center gap-3 mt-3">
                   <FaMobileAlt />
